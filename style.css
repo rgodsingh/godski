@@ -1,0 +1,226 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: darksalmon;
+}
+nav{
+    position: sticky;
+    top: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 30px;
+    width: 494px;
+    margin: auto;
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+#logo{
+    width: 33px;
+    margin: 0em 1.2em;
+
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    margin: 0em;
+}
+.navitems{
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+.navitems a{
+    display: block;
+    padding:  0.3em 0.5em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition-property:unset ;
+    transition-duration: 00.5s;
+}
+.navitems a:hover{
+    background:khaki;
+    color: brown;
+    border-radius: 5px;
+    transform: scale(1.2);
+    
+}
+#logo img{
+    max-width: 100%;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    background: url(homeback.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+#home{
+    display : flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5em 0em;
+}
+
+.h-primary{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+#home p{
+    margin: 1em 0em;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    width: 90%;
+    text-align: center;
+}
+.btn {
+    padding: 1em;
+    border-radius: 12px;
+    border: 2px solid black;
+    background: lightcyan;
+    margin: 1em;
+    font-size: 1rem;
+    transition-property:unset;
+    transition-duration: 0.5s;
+}
+.btn:hover{
+    cursor: pointer;    
+    transform: scale(1.2);
+}
+#services{
+    background: wheat;
+    border: 5px solid black;
+    border-radius: 77px;
+}
+#services h1{
+    color: black;
+}
+#boxcontainer{
+    display: flex;
+    padding: 0.5em 0em;
+    justify-content: space-around;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    width: 27%;
+    border-radius: 43px;
+    padding: 2em;
+    background: #bcbcbc;
+}
+.imgbox{
+    width: 100%;
+}
+.services-img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+.heading{
+    text-align: center;
+    padding: 1em;
+    font-size: 2.7rem;
+    color: darkred;
+}
+.para{
+    font-size: 1.4rem;
+    text-align: justify;
+    padding: 0.6em;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    background: darksalmon;
+}
+#contact h1{
+    color: black;
+    font-size: 2.5rem; 
+}
+#contact form{
+    width: 90%;
+}
+#formcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formitems{
+    width: 65%;
+    margin: 1em auto;
+}
+.formitems input{
+    text-align: center;
+    width: 60%;
+    display: block;
+    margin: auto;
+    border: 4px solid black;
+    border-radius: 10px;
+    height: 37px;
+    font-size: 1.55rem;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+footer h3{
+    color: white;
+    text-align: center;
+    background: black;
+}
+@media screen and (max-width: 1200px) {
+    #boxcontainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 75% ;
+        margin: 1em 0em;
+    }
+    @media screen and (max-width: 502px){
+        #navbar{
+        flex-direction: column;
+        width: 90%;
+        max-width: 290px;
+    }
+    .h-primary{
+        font-size: 2rem;
+    }
+    .navitems{
+        font-size: 0.8rem;
+    }
+    .navitems{
+        padding: 0.2em;
+    }
+    .heading{
+        font-size: 1.5rem;
+        padding: 1em 0em;
+    }
+    .formitems{
+        width: 100%;
+    }
+    .formitems input{
+        font-size: 1em ;
+        width: 90%;
+    }
+    .box{
+        padding: 1.5em ;
+    }
+}
+}
